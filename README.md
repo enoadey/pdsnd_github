@@ -7,7 +7,7 @@ This project and its README file was launched on the second of September, 2021.
 The Bike-Share Project Analysis-Udacity
 
 ### Description
-Describe what your project is about and what it does
+We used Python to investigate Bikeshare systems related data for three major cities operating the systems in the United States. We also performed data wrangling to combine the data format from the cities and wrote code to estimate descriptive statistics analysis. 
 
 ### Files used
 Include the files used
