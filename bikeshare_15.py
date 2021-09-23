@@ -18,28 +18,42 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         city = input('kindly enter the city to investigate: ').lower()
-        if city not in ('chicago', 'new york city', 'washington'):
-            print("unfortunate request! retry")
-            continue
-        else:
+        if city in ('chicago', 'new york city', 'washington'):
             break
+        print("unfortunate request! retry")
+        continue
     # get user input for month (all, january, february, ... , june)
     while True:
         month = input("kindly enter month identity, or enter 'all' to print all the month: ").lower()
-        if month not in ('january', 'february', 'march', 'april', 'may', 'june', 'all'):
-            print("unfortunate request! retry")
-            continue
-        else:
+        if month in (
+            'january',
+            'february',
+            'march',
+            'april',
+            'may',
+            'june',
+            'all',
+        ):
             break
+        print("unfortunate request! retry")
+        continue
     # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
         day = input("kindly enter day identity or enter 'all' to print all the days:").lower()
-        if day not in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all'):
-            print("unfortunate request! retry")
-            continue
-        else:
+        if day in (
+            'monday',
+            'tuesday',
+            'wednesday',
+            'thursday',
+            'friday',
+            'saturday',
+            'sunday',
+            'all',
+        ):
             break
 
+        print("unfortunate request! retry")
+        continue
     print('-'*40)
     return city, month, day
 
@@ -86,12 +100,11 @@ def display_rawdata(df):
     rawdata = input('\nWould you like to view some 1st 5 lines rawdata? input yes or no.\n').lower()
     pd.set_option('display.max_column', None)
     while True:
-        if rawdata == 'yes': 
-            print(df[b:b+5])
-        else:
+        if rawdata != 'yes':
             break
-        rawdata = input('\nWould you like to view the next 5 lines rawdata? input yes or no.\n').lower()
-        b+=5
+
+        print(df[b:b+5])
+        continue
 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
