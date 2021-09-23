@@ -100,12 +100,11 @@ def display_rawdata(df):
     rawdata = input('\nWould you like to view some 1st 5 lines rawdata? input yes or no.\n').lower()
     pd.set_option('display.max_column', None)
     while True:
-        if rawdata == 'yes': 
-            print(df[b:b+5])
-        else:
+        if rawdata != 'yes':
             break
-        rawdata = input('\nWould you like to view the next 5 lines rawdata? input yes or no.\n').lower()
-        b+=5
+
+        print(df[b:b+5])
+        continue
 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
