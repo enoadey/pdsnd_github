@@ -13,4 +13,12 @@ We used Python to investigate Bikeshare systems related data for three major cit
 We used three data files from three major cities operating the system in the United States.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Books: Beginning Python: Peter C. Norton, Alex Samuel, Dave Aitel, Eric Foster-Johnson, Leonard Richardson, Jason Diamond, Aleatha Parker, Michael Roberts\
+\
+Website\
+\
+https://sites.google.com/udacity.com/programdatascipython-project2\
+\
+https://sites.google.com/udacity.com/programdatascipython-project2\
+\
+https://sites.google.com/udacity.com/programdatascipython-project2\
